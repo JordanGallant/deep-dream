@@ -1,0 +1,9 @@
+bind = "0.0.0.0:10000"
+workers = 1
+worker_class = "sync"
+timeout = 1800  # 30 minutes (increase as needed)
+keepalive = 300  # 5 minutes
+max_requests = 10
+max_requests_jitter = 5
+preload_app = True
+worker_connections = 1000
