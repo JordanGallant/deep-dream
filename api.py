@@ -270,8 +270,8 @@ def deepdream_endpoint():
         
         # Get parameters from form data
         recipient_email = request.form.get('email')
-        layer_index = int(request.form.get('layer_index', 35))
-        steps = int(request.form.get('steps', 500))
+        layer_index = int(request.form.get('layer_index', 30))
+        steps = int(request.form.get('steps', 100))
         step_size = float(request.form.get('step_size', 0.03))
         use_multiscale = request.form.get('multiscale', 'false').lower() == 'true'
         
