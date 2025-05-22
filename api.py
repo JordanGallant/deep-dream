@@ -12,7 +12,6 @@ import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image, ImageOps
 import numpy as np
-import tempfile
 
 
 app = Flask(__name__)
@@ -372,4 +371,4 @@ if __name__ == '__main__':
     print(f"Starting DeepDream API on device: {device}")
     if torch.cuda.is_available():
         print(f"CUDA device: {torch.cuda.get_device_name()}")
-    app.run(debug=True, host='0.0.0.0', port=6969)
+    app.run(debug=False, host='0.0.0.0', port=6969)
